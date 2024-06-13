@@ -12,7 +12,7 @@ import {
 import { useUser } from "@clerk/nextjs";
 
 import { Button } from "@/components/ui/button";
-import BotAvatar from "@/app/(chat)/(routes)/chat/[chatId]/components/bot-avatar";
+import BotAvatar from "@/components/bot-avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
