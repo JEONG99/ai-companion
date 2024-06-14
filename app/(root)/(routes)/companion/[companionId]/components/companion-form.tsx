@@ -106,8 +106,8 @@ const CompanionForm: React.FC<CompanionFormProps> = ({
         description: "Success!",
       });
 
-      router.refresh();
       router.push("/");
+      router.refresh();
     } catch (err) {
       toast({
         variant: "destructive",

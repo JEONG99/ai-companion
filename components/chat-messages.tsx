@@ -43,15 +43,15 @@ const ChatMessages: React.FC<ChatMessagesProps> = ({
       <ChatMessage
         src={companion.src}
         role="system"
-        content="Hello"
+        content={`Hello, I'm ${companion.name}, ${companion.description}.`}
         isLoading={fakeLoading}
       />
-      {messages.map((message) => (
+      {messages.map((message, i) => (
         <ChatMessage
-          key={message.content}
+          key={i}
           role={message.role}
           content={message.content}
-          src={message.src}
+          src={companion.src}
         />
       ))}
       {isLoading && <ChatMessage role="system" src={companion.src} isLoading />}
